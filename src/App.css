@@ -1,0 +1,13 @@
+.container {
+  padding: 20px;
+}
+
+.upload-resume,
+.upload-jd {
+  margin-bottom: 15px;
+}
+
+
+.upload-message{
+  color: blue;
+}
