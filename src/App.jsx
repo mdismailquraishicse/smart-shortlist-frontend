@@ -56,6 +56,12 @@ function App() {
       const data = await response.json();
       if (data.status === "success") {
       setMatches(data.result);
+      if (!data.result || data.result.length === 0){
+        alert("No user found in the database please upload some resume first")
+      }
+    }
+    else{
+      alert(data.message)
     }
     } catch (error){
       console.error("Upload failed: ", error)
